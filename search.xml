@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>[macOS]设置菜单栏间距</title>
+      <link href="/2024/06/23/macOS-%E8%AE%BE%E7%BD%AE%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%97%B4%E8%B7%9D/"/>
+      <url>/2024/06/23/macOS-%E8%AE%BE%E7%BD%AE%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%97%B4%E8%B7%9D/</url>
+      
+        <content type="html"><![CDATA[<h2 id="为什么会想要手动修改"><a href="#为什么会想要手动修改" class="headerlink" title="为什么会想要手动修改"></a>为什么会想要手动修改</h2><p>在MacBook 14及以后的版本中，屏幕中央新增了一个刘海设计，同时右侧状态栏的间距相较之前有所增宽。这使得本已空间有限的菜单栏显得更加拥挤。</p><p>尝试过<code>Barbee</code>  <code>Bartender</code>等一些菜单栏工具，相对来说Bartender功能更加丰富，<a href="https://www.reddit.com/r/macapps/comments/1d7zjv8/bartender_5_not_safe_anymore_warning_from/">由于最近的社区讨论</a>，用着有点不放心，所以就有了以下设置：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定间距</span></span><br><span class="line">defaults -currentHost write -globalDomain NSStatusItemSpacing -int 10</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定内边距</span></span><br><span class="line">defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">当前间距查询</span></span><br><span class="line">defaults -currentHost read -globalDomain NSStatusItemSpacing</span><br><span class="line">defaults -currentHost read -globalDomain NSStatusItemSelectionPadding</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">重置</span></span><br><span class="line">defaults -currentHost delete -globalDomain NSStatusItemSpacing</span><br><span class="line">defaults -currentHost delete -globalDomain NSStatusItemSelectionPadding</span><br></pre></td></tr></table></figure><h3 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h3><ul><li><p><a href="https://www.reddit.com/r/macapps/comments/1d8l54f/reduce_spacing_between_menubar_items/">reddit</a></p></li><li><p><a href="https://cn.v2ex.com/t/1047186#reply29">v2ex</a></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> macOS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> macOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
