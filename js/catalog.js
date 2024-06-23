@@ -38,9 +38,9 @@ function changePos() {
   const postContentTop = postContent.offsetTop;
 
   if (scrollTop > postContentTop - 20) {
-    catalog.style.cssText = "position: fixed; top: 50px; bottom: 20px; width: 100%;";
+    catalog.style.cssText = "position: fixed; top: 50px; bottom: 20px;";
   } else {
-    catalog.style.cssText = `position: absolute; top: calc(${headerHeight}px + 35px + 48px); width: 100%;`;
+    catalog.style.cssText = `position: absolute; top: calc(${headerHeight}px + 35px + 48px);`;
   }
 }
 
@@ -78,10 +78,10 @@ function isActiveCat() {
 }
 
 // 窗体高度变化时
-function handleResize() {
-  let windowHeight = document.documentElement.clientHeight
-  tocElement.setAttribute('style', `height: ${windowHeight - 90}px`);
-}
+// function handleResize() {
+//   let windowHeight = document.documentElement.clientHeight
+//   tocElement.setAttribute('style', `height: ${windowHeight - 90}px`);
+// }
 
 // 小屏下（屏宽小于888px）是否展开目录
 function openOrHiddenCatalog() {

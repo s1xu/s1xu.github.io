@@ -69,7 +69,7 @@ a:hover {
 }
 
 .flex-container {
-  min-height: calc(100vh - 290px);
+  min-height: calc(80vh - 290px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,11 +78,11 @@ a:hover {
 }
 
 .header {
-  min-height: 80vh; /* 视口的100%高度 */
-  width: 100%;
+  /* min-height: 80vh;  */
+  /* width: 100%; */
   padding: 250px 0;
-  box-sizing: border-box; /* 包含padding在内的宽度计算 */
-  margin: 0;
+  /* box-sizing: border-box;  */
+  /* margin: 0; */
 }
 
 .container {
@@ -130,7 +130,7 @@ a:hover {
     padding: 10px;
     z-index: 999;
     color: var(--color-text-a);
-    background-color: rgb(255 255 255 / 50%);
+    /* background-color: rgb(255 255 255 / 50%); */
   }
   .btn-catalog i {
     font-size: 24px;
@@ -162,11 +162,11 @@ a:hover {
   .post-catalog .catalog-content {
     height: unset!important;
   }
-
   .back-to-top {
     opacity: 0;
     z-index: -1;
   }
+
 }
 
 @media (max-width: 1200px) and (min-width: 887px) {
@@ -225,7 +225,15 @@ a:hover {
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  box-shadow: 
+    0 0 15px 5px rgba(199, 66, 71, 0.2), 
+    0 0 25px 10px rgba(199, 66, 71, 0.2),
+    0 0 35px 15px rgba(199, 66, 71, 0.2); 
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+
+
 
 .avatar .nickname {
   font-size: 2rem;
@@ -478,6 +486,7 @@ a:hover {
 
 .catalog-content {
   overflow: auto;
+  pointer-events: none;
 }
 
 .post-catalog .toc-child {

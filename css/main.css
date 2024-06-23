@@ -1042,7 +1042,7 @@ figure .pin-copy {
 
 /* dark scheme */
 :root[color-mode="dark"] {
-  --bg-body: #2E3440;
+  --bg-body: #3A3E4A;
   --color-text-base: #C1C2C5;
   --color-text-a: #C1C2C5;
   --color-text-a-hover: #FFFFFF;
@@ -1134,7 +1134,7 @@ a:hover {
 }
 
 .flex-container {
-  min-height: calc(100vh - 290px);
+  min-height: calc(80vh - 290px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1143,11 +1143,11 @@ a:hover {
 }
 
 .header {
-  min-height: 80vh; /* 视口的100%高度 */
-  width: 100%;
+  /* min-height: 80vh;  */
+  /* width: 100%; */
   padding: 250px 0;
-  box-sizing: border-box; /* 包含padding在内的宽度计算 */
-  margin: 0;
+  /* box-sizing: border-box;  */
+  /* margin: 0; */
 }
 
 .container {
@@ -1195,7 +1195,7 @@ a:hover {
     padding: 10px;
     z-index: 999;
     color: var(--color-text-a);
-    background-color: rgb(255 255 255 / 50%);
+    /* background-color: rgb(255 255 255 / 50%); */
   }
   .btn-catalog i {
     font-size: 24px;
@@ -1227,11 +1227,11 @@ a:hover {
   .post-catalog .catalog-content {
     height: unset!important;
   }
-
   .back-to-top {
     opacity: 0;
     z-index: -1;
   }
+
 }
 
 @media (max-width: 1200px) and (min-width: 887px) {
@@ -1290,7 +1290,15 @@ a:hover {
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  box-shadow: 
+    0 0 15px 5px rgba(199, 66, 71, 0.2), 
+    0 0 25px 10px rgba(199, 66, 71, 0.2),
+    0 0 35px 15px rgba(199, 66, 71, 0.2); 
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+
+
 
 .avatar .nickname {
   font-size: 2rem;
@@ -1543,6 +1551,7 @@ a:hover {
 
 .catalog-content {
   overflow: auto;
+  pointer-events: none;
 }
 
 .post-catalog .toc-child {
@@ -2152,41 +2161,41 @@ a:hover {
   margin-left: 30px;
 }
 .v[data-class="v"] .vwrap .vheader .vinput:focus {
-  border-bottom-color: #808080 !important;
+  border-bottom-color: #b84c4b !important;
 }
 .v[data-class="v"] .vbtn:active,
 .v[data-class="v"] .vbtn:hover {
-  border-color: #808080 !important;
+  border-color: #b84c4b !important;
 }
 .v[data-class="v"] .vcards .vcard .vh .vmeta .vat {
-  color: #808080 !important;
+  color: #b84c4b !important;
 }
 .v[data-class="v"] a {
-  color: #808080 !important;
+  color: #b84c4b !important;
 }
 .fancybox-progress {
-  background: #808080 !important;
+  background: #b84c4b !important;
 }
 .markdown-body code {
-  color: #808080;
+  color: #b84c4b;
 }
 .markdown-body a:hover {
-  border-bottom: 2px solid #808080;
+  border-bottom: 2px solid #b84c4b;
 }
 .markdown-body blockquote {
-  border-color: #808080;
+  border-color: #b84c4b;
 }
 .toc-link:hover::after {
-  background-color: #808080;
+  background-color: #b84c4b;
 }
 .toc-link.active::after {
-  background-color: #808080;
+  background-color: #b84c4b;
 }
 .navbar ul li a:hover::after {
-  background-color: #808080;
+  background-color: #b84c4b;
 }
 .navbar ul li.active a::after {
-  background-color: #808080;
+  background-color: #b84c4b;
 }
 .markdown-body h1 .headerlink::before,
 .markdown-body h2 .headerlink::before,
@@ -2194,5 +2203,5 @@ a:hover {
 .markdown-body h4 .headerlink::before,
 .markdown-body h5 .headerlink::before,
 .markdown-body h6 .headerlink::before {
-  color: #808080;
+  color: #b84c4b;
 }
