@@ -1145,7 +1145,7 @@ a:hover {
 .header {
   /* min-height: 80vh;  */
   /* width: 100%; */
-  padding: 250px 0;
+  padding: 150px 0 150px ;
   /* box-sizing: border-box;  */
   /* margin: 0; */
 }
