@@ -1,51 +1,29 @@
-// catalog js
+// 获取页面元素
 let catalog = document.getElementById("catalog");
-let catalogTopHeight = catalog.offsetTop;
-let tocElement = document.getElementsByClassName("catalog-content")[0]
-
-// 是否固定目录
-function throttle(func, limit) {
-  let lastFunc;
-  let lastRan;
-  return function() {
-    const context = this;
-    const args = arguments;
-    if (!lastRan) {
-      func.apply(context, args);
-      lastRan = Date.now();
-    } else {
-      if (lastFunc) {
-        cancelAnimationFrame(lastFunc);
-      }
-      lastFunc = requestAnimationFrame(function() {
-        if ((Date.now() - lastRan) >= limit) {
-          func.apply(context, args);
-          lastRan = Date.now();
-        }
-      });
-    }
-  }
-}
-
-
-// 在全局范围内缓存 DOM 查询
+let tocElement = document.getElementsByClassName("catalog-content")[0];
 const headerHigh = document.querySelector('.header');
-const postContent = document.querySelector('.post-content');
 
+// 动态获取catalog的初始顶部位置
+let catalogTopHeight = catalog.offsetTop;
+
+// 更新catalog位置的函数
 function changePos() {
-  const headerHeight = headerHigh.offsetHeight;
-  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  const postContentTop = postContent.offsetTop;
+  // 动态获取当前滚动位置和header的高度
+  let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  let headerHeight = headerHigh.offsetHeight;
 
-  if (scrollTop > postContentTop - 20) {
-    catalog.style.cssText = "position: fixed; top: 50px; bottom: 20px;";
+  // 判断是否需要固定catalog
+  if (scrollTop > catalogTopHeight - 20) {
+    catalog.style = "position: fixed; top: 20px; bottom: 20px;";
   } else {
-    catalog.style.cssText = `position: absolute; top: calc(${headerHeight}px + 35px + 48px);`;
+    catalog.style = `position: absolute; top: ${headerHeight + 88 + 30}px`; // 290px, 88px, 和 30px为额外的距离
   }
 }
 
-// 使用节流函数监听滚动事件
-window.addEventListener('scroll', throttle(changePos, 100));
+// 添加滚动事件监听
+window.addEventListener('scroll', changePos);
+
+
 // 是否激活目录
 function isActiveCat() {
   // 可宽限高度值
@@ -78,10 +56,22 @@ function isActiveCat() {
 }
 
 // 窗体高度变化时
-// function handleResize() {
-//   let windowHeight = document.documentElement.clientHeight
-//   tocElement.setAttribute('style', `height: ${windowHeight - 90}px`);
-// }
+function handleResize() {
+  // 获取视窗高度
+  let windowHeight = document.documentElement.clientHeight;
+
+  // 计算目录应有的最大高度
+  let newHeight = windowHeight - 90;
+
+  // 获取当前目录的高度
+  let currentHeight = tocElement.style.height.replace('px', '');
+
+  // 只有当新高度与当前高度不同时才更新
+  if (currentHeight !== newHeight.toString()) {
+    tocElement.style.height = `${newHeight}px`;
+  }
+}
+
 
 // 小屏下（屏宽小于888px）是否展开目录
 function openOrHiddenCatalog() {

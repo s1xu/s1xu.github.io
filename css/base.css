@@ -477,7 +477,7 @@ a:hover {
 .post-catalog {
   position: absolute;
   top: calc(290px + 88px + 30px);
-  left: 50px;
+  right: 50px;
   width: calc(20% - 50px);
   font-size: 1.4rem;
   padding-left: 10px;
@@ -492,7 +492,6 @@ a:hover {
 
 .catalog-content {
   overflow: auto;
-  pointer-events: none;
 }
 
 .post-catalog .toc-child {
@@ -505,7 +504,7 @@ a:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
   line-height: 2;
-}
+} 
 
 .toc-link {
   position: relative;
