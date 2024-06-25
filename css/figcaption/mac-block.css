@@ -21,9 +21,9 @@ figure table {
   margin-bottom: 0 !important;
 }
 
-figure table .gutter {
+/* figure table .gutter {
   user-select: none;
-}
+} */
 
 figure figcaption {
   padding-left: 1rem;
@@ -39,3 +39,14 @@ figure figcaption {
 figure table {
   border-top: 1px solid #ffffff1f;
 }
+
+/* 隐藏代码块左侧的行号 */
+.highlight .gutter {
+  display: none;
+}
+
+/* 为代码块添加内边距 */
+.highlight .code .line{
+  padding-left: 1em; /* 你可以根据需要调整这个值 */
+}
+
