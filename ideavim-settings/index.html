@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="s1xu" />
+  <!-- Open Graph Description 简短摘要-->
+  
+  <!-- 用于搜索引擎的文章摘要 -->
+  
+  <meta name="description" content="s1xu - 折腾记录" />
+  
+  
+  
+  <title>
+    
+      记录ideavim设置 
+      
+      
+      |
+    
+     s1xu - 折腾记录
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1886449_67xjft27j1l.css" />
+  <!-- 代码块风格 -->
+  
+    
+<link rel="stylesheet" href="/css/figcaption/mac-block.css">
+
+  
+
+  <!-- jquery3.3.1 -->
+  
+    <script defer type="text/javascript" src="/plugins/jquery.min.js"></script>
+  
+
+  <!-- fancybox -->
+  
+    <link href="/plugins/jquery.fancybox.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="/plugins/jquery.fancybox.min.js"></script>
+  
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE1TGKXG91"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BE1TGKXG91');
+    </script>
+  
+
+  
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js""></script>
+  
+
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+<meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/rss2.xml" title="s1xu - 折腾记录" type="application/rss+xml">
+</head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img no-lazy src="/images/logo.png" alt="">
+      
+    </a>
+    <div class="nickname">
+      <a href="/">s1xu</a>
+      <a class ="authdocs" href="/">不积跬步无以至千里</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">文章</a>
+        </li>
+      
+        <li class="nav-item" data-path="/categories/">
+          <a href="/categories/">分类</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">标签</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">关于</a>
+        </li>
+      
+    </ul>
+  </div>
+
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">记录ideavim设置</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="Update time"></i>
+          2024-07-13 16:14:00
+        </span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="Categories"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/jetbrains/" title="jetbrains">
+                    <b>#</b> jetbrains
+                  </a>
+                </span>
+                
+              </span>
+          
+              <span class="post-tags">
+                <i class="iconfont icon-tags mr-10" title="Tags"></i>
+                
+                <span class="span--tag mr-8">
+                  <a href="/tags/jetbrains/" title="jetbrains">
+                    #jetbrains
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <p>因为习惯了vim操作，chrome中使用<code>Vimium</code>，所以寻思在常用的编辑器中也使用vim操作，所以有了如下记录：</p>
+<h2 id="1-下载ideavim插件"><a href="#1-下载ideavim插件" class="headerlink" title="1.下载ideavim插件"></a>1.下载ideavim插件</h2><h2 id="2-查看idea自带action"><a href="#2-查看idea自带action" class="headerlink" title="2.查看idea自带action"></a>2.查看idea自带action</h2><ol>
+<li><p>使用<code>:actionlist</code>可以查询所有命令，但是不能确定是具体映射的什么操作，所以不推荐</p>
+</li>
+<li><p>double shift 唤醒窗口搜索<code>track action ids</code> 打开开关，然后正常操作你需要查看的功能，右下角会提示当前的action id<br>复制然后在<code>.ideavimrc</code>中设置映射的快捷键（推荐）</p>
+</li>
+</ol>
+<p>例如：</p>
+<ol>
+<li><p>我的<code>ma</code>是设置书签，设置后我想重命名这个书签的名称方便查找</p>
+</li>
+<li><p>double shift后打开<code>track action ids</code> 开关后，右键书签位置选择<code>Rename BookMark</code> ，此时右下角会弹出当前操作对应的Action id是<code>EditBookmark</code> </p>
+</li>
+<li><p><code>Copy Action Id</code> 在 <code>.ideavimrc</code>中</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot; bookmark 切换书签</span><br><span class="line">nmap ma &lt;action&gt;(ToggleBookmark)</span><br><span class="line">nmap rma &lt;action&gt;(EditBookmark)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<br>
+<br>
+<details>
+    <summary>记录我的.ideavimrc配置(cick to show)</summary>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br><span class="line">432</span><br><span class="line">433</span><br><span class="line">434</span><br><span class="line">435</span><br><span class="line">436</span><br><span class="line">437</span><br><span class="line">438</span><br><span class="line">439</span><br><span class="line">440</span><br><span class="line">441</span><br><span class="line">442</span><br><span class="line">443</span><br><span class="line">444</span><br><span class="line">445</span><br><span class="line">446</span><br><span class="line">447</span><br><span class="line">448</span><br><span class="line">449</span><br><span class="line">450</span><br><span class="line">451</span><br><span class="line">452</span><br><span class="line">453</span><br><span class="line">454</span><br><span class="line">455</span><br><span class="line">456</span><br><span class="line">457</span><br><span class="line">458</span><br><span class="line">459</span><br><span class="line">460</span><br><span class="line">461</span><br><span class="line">462</span><br><span class="line">463</span><br><span class="line">464</span><br><span class="line">465</span><br><span class="line">466</span><br><span class="line">467</span><br><span class="line">468</span><br><span class="line">469</span><br><span class="line">470</span><br><span class="line">471</span><br><span class="line">472</span><br><span class="line">473</span><br><span class="line">474</span><br><span class="line">475</span><br><span class="line">476</span><br><span class="line">477</span><br><span class="line">478</span><br><span class="line">479</span><br><span class="line">480</span><br><span class="line">481</span><br><span class="line">482</span><br><span class="line">483</span><br><span class="line">484</span><br><span class="line">485</span><br><span class="line">486</span><br><span class="line">487</span><br><span class="line">488</span><br><span class="line">489</span><br><span class="line">490</span><br><span class="line">491</span><br><span class="line">492</span><br><span class="line">493</span><br><span class="line">494</span><br><span class="line">495</span><br><span class="line">496</span><br><span class="line">497</span><br><span class="line">498</span><br><span class="line">499</span><br><span class="line">500</span><br><span class="line">501</span><br><span class="line">502</span><br><span class="line">503</span><br><span class="line">504</span><br><span class="line">505</span><br><span class="line">506</span><br><span class="line">507</span><br><span class="line">508</span><br><span class="line">509</span><br><span class="line">510</span><br><span class="line">511</span><br><span class="line">512</span><br><span class="line">513</span><br></pre></td><td class="code"><pre><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot; 🍰🍰🍰 Extensions 🍰🍰🍰</span><br><span class="line">&quot; ================================================================================================</span><br><span class="line"></span><br><span class="line">Plug &#x27;preservim/nerdtree&#x27;</span><br><span class="line">Plug &#x27;easymotion/vim-easymotion&#x27;</span><br><span class="line"></span><br><span class="line">&quot; 下列插件需要在IDEA中下载</span><br><span class="line">&quot; ideaVim</span><br><span class="line">&quot; IdeaVim-EasyMotion</span><br><span class="line">&quot; IdeaVimExtension</span><br><span class="line">&quot; which-key</span><br><span class="line">&quot; CodeGlance Pro</span><br><span class="line">&quot; TranslateAction</span><br><span class="line"></span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot; 🐧🐧🐧 Basic settings 🐧🐧🐧</span><br><span class="line">&quot; ================================================================================================</span><br><span class="line"></span><br><span class="line">set easymotion</span><br><span class="line">&quot;设置在光标距离窗口顶部或底部一定行数时，开始滚动屏幕内容的行为</span><br><span class="line">set scrolloff=10</span><br><span class="line"></span><br><span class="line">&quot;--递增搜索功能：在执行搜索（使用 / 或 ? 命令）时，</span><br><span class="line">&quot;Vim 会在您输入搜索模式的过程中逐步匹配并高亮显示匹配的文本。</span><br><span class="line">set incsearch</span><br><span class="line"></span><br><span class="line">&quot;--在搜索时忽略大小写</span><br><span class="line">set ignorecase</span><br><span class="line"></span><br><span class="line">&quot;--将搜索匹配的文本高亮显示</span><br><span class="line">set hlsearch</span><br><span class="line"></span><br><span class="line">&quot;--设置相对行号 和 当前行的绝对行号</span><br><span class="line">&quot;--set number relativenumber</span><br><span class="line"></span><br><span class="line">&quot;--设置返回normal模式时回到英文输入法</span><br><span class="line">&quot;let context_aware=1</span><br><span class="line">&quot;set keep-english-in-normal-and-restore-in-insert</span><br><span class="line"></span><br><span class="line">&quot; 设置目录树快捷键映射</span><br><span class="line">set NERDTree</span><br><span class="line">let g:NERDTreeMapActivateNode = &#x27;l&#x27;</span><br><span class="line">let g:NERDTreeMapCloseDir = &#x27;h&#x27;</span><br><span class="line"></span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot; 🌍🌍🌍 No Leader Keymaps 🌍🌍🌍</span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot;--普通模式下使用回车键，向下/向上 增加一行</span><br><span class="line">nmap &lt;CR&gt; o&lt;Esc&gt;</span><br><span class="line">nmap &lt;S-Enter&gt; O&lt;Esc&gt;</span><br><span class="line"></span><br><span class="line">&quot;--在普通和插入模式下，向下交换行/向上交换行</span><br><span class="line">nnoremap &lt;C-j&gt; :m +1&lt;CR&gt;</span><br><span class="line">nnoremap &lt;C-k&gt; :m -2&lt;CR&gt;</span><br><span class="line">inoremap &lt;C-j&gt; &lt;Esc&gt; :m +1&lt;CR&gt;gi</span><br><span class="line">inoremap &lt;C-k&gt; &lt;Esc&gt; :m -2&lt;CR&gt;gi</span><br><span class="line">xnoremap &lt;C-j&gt; :m &#x27;&gt;+1&lt;cr&gt;gv=gv</span><br><span class="line">xnoremap &lt;C-k&gt; :m &#x27;&lt;-2&lt;cr&gt;gv=gv</span><br><span class="line">nnoremap gh :action ShowErrorDescription&lt;cr&gt;</span><br><span class="line">nnoremap H ^</span><br><span class="line">nnoremap L $</span><br><span class="line">set selectmode=key</span><br><span class="line">set keymodel+=startsel,stopsel,stopselect</span><br><span class="line">nmap &lt;Leader&gt;o &lt;action&gt;(RecentProjectListGroup)</span><br><span class="line"></span><br><span class="line">&quot;--将 jj 和 jk 映射为 &lt;Esc&gt;</span><br><span class="line">&quot;jj和jk为主流配置，可按喜好自行调整</span><br><span class="line">imap jj &lt;Esc&gt;</span><br><span class="line">imap jk &lt;Esc&gt;</span><br><span class="line"></span><br><span class="line">&quot;--格式化（规范化）文本，即对选定的文本进行换行或重排，适应指定的文本宽度。</span><br><span class="line">&quot;全文规范化：Ctrl+Alt+l</span><br><span class="line">map Q gq</span><br><span class="line">&quot;跳转到下一个错误或警告</span><br><span class="line">nmap ge &lt;action&gt;(GotoNextError)</span><br><span class="line">let g:WhichKeyDesc_GotoNextError = &quot;ge 跳转到下一个错误或警告&quot;</span><br><span class="line">&quot;在源代码和测试代码之间快速切换</span><br><span class="line">nmap gt &lt;action&gt;(GotoTest)</span><br><span class="line">let g:WhichKeyDesc_GotoTest = &quot;gt 在源代码和测试代码之间快速切换&quot;</span><br><span class="line">&quot;将光标移动到上一个方法的声明处</span><br><span class="line">&quot; last changed in current buffer(file)</span><br><span class="line">nmap gm &lt;action&gt;(MethodUp)</span><br><span class="line">let g:WhichKeyDesc_MethodUp = &quot;gm 将光标移动到上一个方法的声明处&quot;</span><br><span class="line">&quot;跳转到当前接口或抽象类的实现处</span><br><span class="line">nmap ga &lt;action&gt;(GotoImplementation)</span><br><span class="line">let g:WhichKeyDesc_GotoImplementation = &quot;ga 跳转到当前接口或抽象类的实现处&quot;</span><br><span class="line"></span><br><span class="line">&quot; bookmark 切换书签</span><br><span class="line">nmap ma &lt;action&gt;(ToggleBookmark)</span><br><span class="line">nmap rma &lt;action&gt;(EditBookmark)</span><br><span class="line">nmap tm &lt;action&gt;(ActivateBookmarksToolWindow)</span><br><span class="line">let g:WhichKeyDesc_bookmark = &quot;ma 书签&quot;</span><br><span class="line"></span><br><span class="line">&quot;切换标签页</span><br><span class="line">nmap K &lt;action&gt;(NextTab)</span><br><span class="line">nmap J &lt;action&gt;(PreviousTab)</span><br><span class="line"></span><br><span class="line">&quot;将Ctrl + s 映射为保存文档(也可以在VIM设置里将此快捷键设置为IDEA的快捷键)</span><br><span class="line">nmap &lt;C-S&gt; &lt;action&gt;(SaveAll)</span><br><span class="line">imap &lt;C-S&gt; &lt;Esc&gt;&lt;action&gt;(SaveAll)</span><br><span class="line"></span><br><span class="line">&quot; e: Extract</span><br><span class="line">&quot; extract method/function 将选中的代码片段提取为一个独立的方法(Ctrl + Alt + M)</span><br><span class="line">vmap &lt;leader&gt;em &lt;action&gt;(ExtractMethod)</span><br><span class="line">&quot; extract constant （引入常量）的重构操作:将选中的代码片段抽取为一个常量，并自动替换选中的代码片段为新的常量引用(Ctrl + Alt + C)</span><br><span class="line">vmap &lt;leader&gt;ec &lt;action&gt;(IntroduceConstant)</span><br><span class="line">&quot; extract field （引入字段）的重构操作:将选中的代码片段转化为一个新的字段，并自动将选中的代码片段替换为对该字段的引用(Ctrl + Alt + F)</span><br><span class="line">vmap &lt;leader&gt;ef &lt;action&gt;(IntroduceField)</span><br><span class="line">&quot; extract variable （引入变量）的重构操作:将选中的代码片段抽取为一个新的变量，并自动替换选中的代码片段为新的变量引用(Ctrl + Alt + V)</span><br><span class="line">vmap &lt;leader&gt;ev &lt;action&gt;(IntroduceVariable)</span><br><span class="line"></span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot; ⭐️⭐️⭐️ Leader Keymaps ⭐️⭐️⭐️ =====================================</span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot;--将&lt;leader&gt;设置为 空格 键</span><br><span class="line">&quot;可自行更改，只需更改双引号内的内容即可</span><br><span class="line">&quot;推荐&lt;leader&gt;:  &quot;空格&quot;  &quot;;&quot;  &quot;\&quot;  &quot;-&quot;  &quot;,&quot;</span><br><span class="line">let mapleader = &quot; &quot;</span><br><span class="line"></span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot; 👻👻👻 Which-Key 👻👻👻</span><br><span class="line">&quot; ================================================================================================</span><br><span class="line"></span><br><span class="line">&quot;which-key的官方推荐配置</span><br><span class="line">set which-key</span><br><span class="line">set notimeout</span><br><span class="line"></span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot; 🌞🌞🌞 目录-食用手册 🌞🌞🌞</span><br><span class="line">&quot; ================================================================================================</span><br><span class="line"></span><br><span class="line">&quot;===================================== A =====================================</span><br><span class="line">&quot; a:</span><br><span class="line">&quot;===================================== B =====================================</span><br><span class="line">&quot; b:</span><br><span class="line">&quot;===================================== C =====================================</span><br><span class="line">&quot; c:  CodeAndClose-[目录]🎈</span><br><span class="line">&quot; cc: CodeCompletion-自动补全</span><br><span class="line">&quot; cd: CloseEditor-关闭当前标签页</span><br><span class="line">&quot; ca: CloseAllEditors-关闭所有标签页</span><br><span class="line">&quot; co: CloseAllEditorsButActive-关闭其他标签页</span><br><span class="line">&quot;===================================== D =====================================</span><br><span class="line">&quot; d: DebugOrDelete-[目录]🎈</span><br><span class="line">&quot; dp: BreakPoint-打断点/解除断点</span><br><span class="line">&quot; db: DeBug-调试</span><br><span class="line">&quot; [V]d: DeleteAndCopyClipboard-在可视模式中：删除选择的文本并复制到剪切板</span><br><span class="line">&quot;===================================== E =====================================</span><br><span class="line">&quot; e: ToggleExplorer ⭐️ 激活项目工具窗口</span><br><span class="line">&quot;===================================== F =====================================</span><br><span class="line">&quot; f: Find/Format ⭐🎈[目录]</span><br><span class="line">&quot; ff: FindFile-快速 导航/查找 项目中的其他文件(Ctrl + n)</span><br><span class="line">&quot; fl: FindFileLocation-将当前编辑的文件在项目视图中进行选中定位(Ctrl+f)</span><br><span class="line">&quot; ft: FindText-在整个项目中查找指定的文本、关键字或正则表达式，包括代码文件、配置文件和其他文件等(Ctrl + Shift + F)</span><br><span class="line">&quot; fc: Commands-打开 &quot;Find Action&quot;（查找动作）对话框(Ctrl + Shift + A)</span><br><span class="line">&quot; fm: Format-重新格式化代码，使其符合预定义的代码样式和规范 and 优化导入语句，删除未使用的导入，并将导入语句按字母顺序进行排列</span><br><span class="line">&quot;===================================== G =====================================</span><br><span class="line">&quot; g: GitOrGenerate 🎈[目录]</span><br><span class="line">&quot; gr: RollbackHunk-执行版本控制（VCS）的回滚操作，将修改的代码还原到之前的版本</span><br><span class="line">&quot; gc: GenerateConstructor-生成构造函数</span><br><span class="line">&quot; gg: GenerateGetter-生成getter函数</span><br><span class="line">&quot; gs: GenerateSetter-生成setter函数</span><br><span class="line">&quot; ga: GenerateGetterAndSetter-生成getter和setter函数</span><br><span class="line">&quot; ge: GenerateEquals-生成equals和hashcode的重写方法</span><br><span class="line">&quot; gd: ShowTabbedFileHistory-显示文件的版本控制历史(git)</span><br><span class="line">&quot;===================================== H =====================================</span><br><span class="line">&quot; h: MoveToLeftMoveToLeft-跳转到左边的分割窗口</span><br><span class="line">&quot;===================================== I =====================================</span><br><span class="line">&quot; i: Insert ⭐快速查找并跳转到下一个以 ( 开始的函数或方法调用的位置️</span><br><span class="line">&quot;===================================== J =====================================</span><br><span class="line">&quot; j: MoveToDown-跳转到下边的分割窗口</span><br><span class="line">&quot;===================================== K =====================================</span><br><span class="line">&quot; k: MoveToUp-跳转到上边的分割窗口</span><br><span class="line">&quot;===================================== L =====================================</span><br><span class="line">&quot; l: MoveToRight-跳转到右边的分割窗口</span><br><span class="line">&quot;===================================== M =====================================</span><br><span class="line">&quot; m: CodeGlance-打开/关闭地图(需要CodeGlance Pro插件)</span><br><span class="line">&quot;===================================== N =====================================</span><br><span class="line">&quot; n: NERDTreeOrNo ⭐️[目录]🎈</span><br><span class="line">&quot; nn: NERDTreeFocus-将使焦点转移到 NERDTree 窗口(配置在NERDTree专栏)</span><br><span class="line">&quot; nh: NoHighlight-取消搜索高亮显示</span><br><span class="line">&quot; nd: NewDir-新建文件夹</span><br><span class="line">&quot; nc: NewClass-新建类</span><br><span class="line">&quot;===================================== O =====================================</span><br><span class="line">&quot; o:</span><br><span class="line">&quot;===================================== P =====================================</span><br><span class="line">&quot; p: PasteClipboardDown-从剪切板粘贴到下面行</span><br><span class="line">&quot; P: PasteClipboardUp-从剪切板粘贴到上面行</span><br><span class="line">&quot; [V]p: PasteClipboardDown-在可视模式中：从剪切板粘贴到下面行</span><br><span class="line">&quot; [V]P: PasteClipboardUp-在可视模式中：从剪切板粘贴到上面行</span><br><span class="line">&quot;===================================== Q =====================================</span><br><span class="line">&quot; q:</span><br><span class="line">&quot;===================================== R =====================================</span><br><span class="line">&quot; r: Run/Re ⭐️[目录]🎈</span><br><span class="line">&quot; ru: Run-运行</span><br><span class="line">&quot; rc: RunClass-运行当前编辑器中的文件或类(Shift + F10)</span><br><span class="line">&quot; rr: ReRun-重新运行最近一次运行的程序或测试(Ctrl + Shift + F10)</span><br><span class="line">&quot; rt: ReRunTests-重新运行最近一次运行的测试（Unit Tests）(Ctrl + Shift + F10)</span><br><span class="line">&quot; rn: Rename-在代码中快速更改一个标识符的名称，并自动处理所有相关的引用(Shift + F6)</span><br><span class="line">&quot;===================================== S =====================================</span><br><span class="line">&quot; s: Show ⭐️[目录]🎈</span><br><span class="line">&quot; st: Stop</span><br><span class="line">&quot; ss: ShowFileStructure-显示当前打开文件的文件结构弹出窗口，其中包含文件中的类、方法、字段等结构(Alt + 7)</span><br><span class="line">&quot; sb: ShowBookmarks-显示书签（Bookmarks）工具窗口，其中包含当前文件中设置的书签列表(Ctrl + F11)</span><br><span class="line">&quot; sp: ShowParameterInfo-用于显示方法或函数的参数信息(Ctrl + p)</span><br><span class="line">&quot;===================================== T =====================================</span><br><span class="line">&quot; t: Translate-翻译(需要Translate插件)</span><br><span class="line">&quot;===================================== U =====================================</span><br><span class="line">&quot; u:</span><br><span class="line">&quot;===================================== V =====================================</span><br><span class="line">&quot; v:</span><br><span class="line">&quot;===================================== W =====================================</span><br><span class="line">&quot; w: Window ⭐️[目录]🎈</span><br><span class="line">&quot; wc: CloseSplitTab-关闭当前分割窗口(ctrl+w+c)</span><br><span class="line">&quot; wu: Unsplit-恢复当前分割窗口</span><br><span class="line">&quot; wa: UnsplitAll-恢复所有分割窗口</span><br><span class="line">&quot; wml: MoveTabRight-向右拆分标签页</span><br><span class="line">&quot; wmd: MoveTabDown-向下拆分标签页</span><br><span class="line">&quot; wmc: SplitVertically-向右复制标签页</span><br><span class="line">&quot; wmo: MoveEditorToOppositeTabGroup-在另一边打开（前提是有另一边的分割窗口）</span><br><span class="line">&quot; wl: MoveToRight-跳转到右边的窗口(&lt;c-w&gt;l)</span><br><span class="line">&quot; wh: MoveToLeft-跳转到左边的窗口(&lt;c-w&gt;h)</span><br><span class="line">&quot; wk: MoveToUp-跳转到上边的窗口(&lt;c-w&gt;k)</span><br><span class="line">&quot; wj: MoveToDown-跳转到下边的窗口(&lt;c-w&gt;j)</span><br><span class="line">&quot; wwa: HideActiveWindow-关闭提示窗口(Shift+Esc)</span><br><span class="line">&quot;===================================== X =====================================</span><br><span class="line">&quot; x:</span><br><span class="line">&quot;===================================== Y =====================================</span><br><span class="line">&quot; y: CopyClipboard-将选中行复制到剪切板</span><br><span class="line">&quot; [V]y: CopyClipboard-在可视模式中：将选中文字复制到剪切板</span><br><span class="line">&quot;===================================== Z =====================================</span><br><span class="line">&quot; z: zip(fold) ⭐️[目录]🎈</span><br><span class="line">&quot; zo: unZipAll-展开所有代码折叠区域(Ctrl + Shift + 加号键)</span><br><span class="line">&quot; zc: ZipAll-折叠所有代码折叠区域(Ctrl + Shift + 减号键)</span><br><span class="line">&quot;=============================================================================</span><br><span class="line">&quot;=============================================================================</span><br><span class="line">&quot;=============================================================================</span><br><span class="line"></span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot; 🌟🌟🌟 &lt;leader&gt;详细配置 🌟🌟🌟</span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot;========= NULL ========</span><br><span class="line">&quot;这一行为在按下&lt;leader&gt;后显示的,甭管就行</span><br><span class="line">let g:WhichKeyDesc_LeaderKeymap= &quot;&lt;leader&gt; 🌟🌟🌟紫色为二级目录🌟🌟🌟&quot;</span><br><span class="line"></span><br><span class="line">&quot;========== b ==========</span><br><span class="line"></span><br><span class="line">&quot;========== c =========c</span><br><span class="line">let g:WhichKeyDesc_CodeAndClose = &quot;&lt;leader&gt;c Code&amp;关闭&quot;</span><br><span class="line"></span><br><span class="line">&quot;关闭所有标签页</span><br><span class="line">let g:WhichKeyDesc_CodeAndClose_CloseAllEditors = &quot;&lt;leader&gt;ca 关闭所有标签页&quot;</span><br><span class="line">nmap &lt;leader&gt;ca &lt;action&gt;(CloseAllEditors)</span><br><span class="line">&quot;关闭当前标签页</span><br><span class="line">let g:WhichKeyDesc_CodeAndClose_CloseEditor = &quot;&lt;leader&gt;cd 关闭当前标签页&quot;</span><br><span class="line">nmap &lt;leader&gt;cd :action CloseEditor&lt;CR&gt;</span><br><span class="line">&quot;代码自动补全</span><br><span class="line">&quot;let g:WhichKeyDesc_CodeAndClose_CodeCompletion = &quot;&lt;leader&gt;cc 代码自动补全&quot;</span><br><span class="line">&quot;nmap &lt;leader&gt;cc &lt;action&gt;(CodeCompletion)</span><br><span class="line">let g:WhichKeyDesc_CodeAndClose_CodeCompletion = &quot;&lt;leader&gt;cc 关闭当前项目&quot;</span><br><span class="line">nmap &lt;leader&gt;cc &lt;action&gt;(CloseProject)</span><br><span class="line">&quot;关闭其他标签页</span><br><span class="line">let g:WhichKeyDesc_CodeAndClose_CloseAllEditorsButActive = &quot;&lt;leader&gt;co 关闭其他标签页&quot;</span><br><span class="line">nmap &lt;leader&gt;co :action CloseAllEditorsButActive&lt;CR&gt;</span><br><span class="line"></span><br><span class="line">&quot;========== d ==========</span><br><span class="line">let g:WhichKeyDesc_DeBugOrDelete= &quot;&lt;leader&gt;d 调试&amp;删除&quot;</span><br><span class="line">&quot;打断点/解除断点</span><br><span class="line">let g:WhichKeyDesc_DebugOrDelete_BreakPoint = &quot;&lt;leader&gt;dp 打断点/解除断点 &quot;</span><br><span class="line">nmap &lt;leader&gt;dp &lt;Action&gt;(ToggleLineBreakpoint)</span><br><span class="line">&quot;调试</span><br><span class="line">let g:WhichKeyDesc_DebugOrDelete_DeBug = &quot;&lt;leader&gt;db 调试&quot;</span><br><span class="line">nmap &lt;leader&gt;db &lt;Action&gt;(Debug)</span><br><span class="line">&quot;在可视模式中：删除选择的文本并复制到剪切板</span><br><span class="line">let g:WhichKeyDesc_DebugOrDelete_DeleteAndCopyToClipboard = &quot;&lt;leader&gt;dd 删除并复制到剪切板&quot;</span><br><span class="line">vmap &lt;leader&gt;dd &quot;+d</span><br><span class="line"></span><br><span class="line">&quot;========== e ==========</span><br><span class="line">&quot;激活项目工具窗口(Alt + 1)</span><br><span class="line">let g:WhichKeyDesc_ToggleExplorerOrExtract = &quot;&lt;leader&gt;e 打开文件列表&quot;</span><br><span class="line">nmap &lt;leader&gt;e &lt;action&gt;(ActivateProjectToolWindow)</span><br><span class="line"></span><br><span class="line">&quot;========== f ==========</span><br><span class="line">let g:WhichKeyDesc_FindOrFormat = &quot;&lt;leader&gt;f 查找&amp;格式化&quot;</span><br><span class="line"></span><br><span class="line">&quot;快速 导航/查找 项目中的其他文件(Ctrl + n)</span><br><span class="line">let g:WhichKeyDesc_FindOrFormat_FindFile = &quot;&lt;leader&gt;ff 查找文件&quot;</span><br><span class="line">nmap &lt;leader&gt;ff &lt;action&gt;(GotoFile)</span><br><span class="line">&quot;将当前编辑的文件在项目视图中进行选中定位(Alt + F1)</span><br><span class="line">let g:WhichKeyDesc_FindOrFormat_FindFileLocation = &quot;&lt;leader&gt;fl 定位文件位置&quot;</span><br><span class="line">nmap &lt;leader&gt;fl &lt;action&gt;(SelectInProjectView)</span><br><span class="line">&quot;在整个项目中查找指定的文本、关键字或正则表达式，包括代码文件、配置文件和其他文件等(Ctrl + Shift + F)</span><br><span class="line">let g:WhichKeyDesc_FindOrFormat_FindText = &quot;&lt;leader&gt;ft 查找字符&quot;</span><br><span class="line">nmap &lt;leader&gt;ft &lt;action&gt;(FindInPath)</span><br><span class="line">&quot;打开 &quot;Find Action&quot;（查找动作）对话框(Ctrl + Shift + A)</span><br><span class="line">let g:WhichKeyDesc_FindOrFormat_Commands = &quot;&lt;leader&gt;fc 打开查找菜单&quot;</span><br><span class="line">nmap &lt;leader&gt;fc &lt;action&gt;(GotoAction)</span><br><span class="line">&quot;重新格式化代码，使其符合预定义的代码样式和规范 \| 优化导入语句，删除未使用的导入，并将导入语句按字母顺序进行排列</span><br><span class="line">let g:WhichKeyDesc_FindOrFormat_Format = &quot;&lt;leader&gt;fm 格式化代码&quot;</span><br><span class="line">nmap &lt;leader&gt;fm &lt;action&gt;(ReformatCode) \| &lt;action&gt;(OptimizeImports)</span><br><span class="line"></span><br><span class="line">&quot;========== g ==========</span><br><span class="line">let g:WhichKeyDesc_GitOrGenerate = &quot;&lt;leader&gt;g Git&amp;构造&quot;</span><br><span class="line"></span><br><span class="line">&quot;执行版本控制（VCS）的回滚操作，将修改的代码还原到之前的版本</span><br><span class="line">let g:WhichKeyDesc_GitOrGenerate_RollbackHunk = &quot;&lt;leader&gt;gr git回滚&quot;</span><br><span class="line">nmap &lt;leader&gt;gr :action Vcs.RollbackChangedLines&lt;CR&gt;</span><br><span class="line">&quot;生成构造器</span><br><span class="line">let g:WhichKeyDesc_GitOrGenerate_GenerateConstructor = &quot;&lt;leader&gt;gc 生成构造器&quot;</span><br><span class="line">nmap &lt;leader&gt;gc :action GenerateConstructor&lt;CR&gt;</span><br><span class="line">&quot;生成getter</span><br><span class="line">let g:WhichKeyDesc_GitOrGenerate_GenerateGetter = &quot;&lt;leader&gt;gg 生成getter&quot;</span><br><span class="line">nmap &lt;leader&gt;gg :action GenerateGetter&lt;CR&gt;</span><br><span class="line">&quot;生成setter</span><br><span class="line">let g:WhichKeyDesc_GitOrGenerate_GenerateSetter = &quot;&lt;leader&gt;gs 生成setter&quot;</span><br><span class="line">nmap &lt;leader&gt;gs :action GenerateSetter&lt;CR&gt;</span><br><span class="line">&quot;生成setter和getter</span><br><span class="line">let g:WhichKeyDesc_GitOrGenerate_GenerateGetterAndSetter = &quot;&lt;leader&gt;ga 生成setter和getter&quot;</span><br><span class="line">nmap &lt;leader&gt;ga &lt;action&gt;(GenerateGetterAndSetter)</span><br><span class="line">&quot;生成 equals() 和 hashcode() 的重写方法</span><br><span class="line">let g:WhichKeyDesc_GitOrGenerate_GenerateEquals = &quot;&lt;leader&gt;ge 生成equals和hashcode的重写&quot;</span><br><span class="line">nmap &lt;leader&gt;ge &lt;action&gt;(GenerateEquals)</span><br><span class="line">&quot;生成toString</span><br><span class="line">let g:WhichKeyDesc_GitOrGenerate_GenerateToString = &quot;&lt;leader&gt;gt 生成toString&quot;</span><br><span class="line">nmap &lt;leader&gt;gt &lt;action&gt;(Actions.ActionsPlugin.GenerateToString)</span><br><span class="line">&quot;diff 显示文件的版本控制历史(git)</span><br><span class="line">nmap &lt;leader&gt;gd &lt;action&gt;(Vcs.ShowTabbedFileHistory)</span><br><span class="line">let g:WhichKeyDesc_DebugOrDelete_ShowTabbedFileHistory = &quot;&lt;leader&gt;gd 显示文件的版本控制历史&quot;</span><br><span class="line"></span><br><span class="line">&quot;========== h ==========</span><br><span class="line">&quot;跳转到左边的分割窗口</span><br><span class="line">let g:WhichKeyDesc_Show_MoveToLeft = &quot;&lt;leader&gt;h 向左跳转&quot;</span><br><span class="line">nmap &lt;leader&gt;h &lt;c-w&gt;h</span><br><span class="line"></span><br><span class="line">&quot;========== i ==========</span><br><span class="line">&quot;快速查找并跳转到下一个以 ( 开始的函数或方法调用的位置️</span><br><span class="line">let g:WhichKeyDesc_InsertAfterBrackets = &quot;&lt;leader&gt;i 跳转到选一个(&quot;</span><br><span class="line">nmap &lt;leader&gt;i f(a</span><br><span class="line"></span><br><span class="line">&quot;========== j ==========</span><br><span class="line">&quot;跳转到下边的分割窗口</span><br><span class="line">let g:WhichKeyDesc_Show_MoveToDown = &quot;&lt;leader&gt;j 向下跳转&quot;</span><br><span class="line">nmap &lt;leader&gt;j &lt;c-w&gt;j</span><br><span class="line"></span><br><span class="line">&quot;========== k ==========</span><br><span class="line">&quot;跳转到上边的分割窗口</span><br><span class="line">let g:WhichKeyDesc_Show_MoveToUp = &quot;&lt;leader&gt;k 向上跳转&quot;</span><br><span class="line">nmap &lt;leader&gt;k &lt;c-w&gt;k</span><br><span class="line"></span><br><span class="line">&quot;========== l ==========</span><br><span class="line">&quot;跳转到右边的窗口</span><br><span class="line">let g:WhichKeyDesc_Show_MoveToRight = &quot;&lt;leader&gt;l 向右跳转&quot;</span><br><span class="line">nmap &lt;leader&gt;l &lt;c-w&gt;l</span><br><span class="line"></span><br><span class="line">&quot;========== m ==========</span><br><span class="line">&quot;打开/关闭 代码小地图</span><br><span class="line">let g:WhichKeyDesc_CodeGlance = &quot;&lt;leader&gt;m 开关小地图&quot;</span><br><span class="line">nmap &lt;leader&gt;m &lt;action&gt;(CodeGlance.toggle)</span><br><span class="line">&quot;好像更新版本后,突然用不了了,用默认的ctrl+shift+G吧</span><br><span class="line"></span><br><span class="line">&quot;========== n ==========</span><br><span class="line">let g:WhichKeyDesc_NERDTreeOrNew = &quot;&lt;leader&gt;n 目录树&amp;新建&quot;</span><br><span class="line"></span><br><span class="line">&quot;取消搜索高亮显示(No Highlight)</span><br><span class="line">let g:WhichKeyDesc_NERDTreeOrNew_Highlight = &quot;&lt;leader&gt;nh 取消搜索高亮&quot;</span><br><span class="line">nmap &lt;leader&gt;nl :nohlsearch&lt;CR&gt;</span><br><span class="line">&quot;在当前目录新建文件夹</span><br><span class="line">let g:WhichKeyDesc_NERDTreeOrNew_NewDir = &quot;&lt;leader&gt;nd 新建文件夹&quot;</span><br><span class="line">nmap &lt;leader&gt;nd &lt;action&gt;(NewDir)</span><br><span class="line">&quot;在当前目录新建类</span><br><span class="line">let g:WhichKeyDesc_NERDTreeOrNew_NewClass = &quot;&lt;leader&gt;nc 新建.Class&quot;</span><br><span class="line">nmap &lt;leader&gt;nc &lt;action&gt;(NewClass)</span><br><span class="line"></span><br><span class="line">&quot;========== p ==========</span><br><span class="line">&quot;从剪切板粘贴到下面行</span><br><span class="line">let g:WhichKeyDesc_PasteClipboardDown = &quot;&lt;leader&gt;p 从剪切板粘贴到下面行&quot;</span><br><span class="line">nmap &lt;leader&gt;p &quot;+p</span><br><span class="line">&quot;从剪切板粘贴到上面行</span><br><span class="line">let g:WhichKeyDesc_PasteClipboardUp = &quot;&lt;leader&gt;P 从剪切板粘贴到上面行&quot;</span><br><span class="line">nmap &lt;leader&gt;P &quot;+P</span><br><span class="line">&quot;在可视模式中：从剪切板粘贴到下面行</span><br><span class="line">let g:WhichKeyDesc_PasteClipboardDown = &quot;&lt;leader&gt;p 从剪切板粘贴到下面行&quot;</span><br><span class="line">vmap &lt;leader&gt;p &quot;+p</span><br><span class="line">&quot;在可视模式中：从剪切板粘贴到上面行</span><br><span class="line">let g:WhichKeyDesc_PasteClipboardUp = &quot;&lt;leader&gt;P 从剪切板粘贴到上面行&quot;</span><br><span class="line">vmap &lt;leader&gt;P &quot;+P</span><br><span class="line"></span><br><span class="line">&quot;========== r ==========</span><br><span class="line">let g:WhichKeyDesc_RunOrRe = &quot;&lt;leader&gt;r 运行&amp;重新&quot;</span><br><span class="line"></span><br><span class="line">&quot;运行当前编辑器中的文件或类(Shift + F10)</span><br><span class="line">let g:WhichKeyDesc_RunOrRe_RunCalss = &quot;&lt;leader&gt;rc 运行当前文件&quot;</span><br><span class="line">nmap &lt;leader&gt;rc :action RunClass&lt;CR&gt;</span><br><span class="line">&quot;重新运行最近一次运行的程序或测试(Ctrl+Shift + F10)</span><br><span class="line">let g:WhichKeyDesc_RunOrRe_ReRun = &quot;&lt;leader&gt;rr 重新运行&quot;</span><br><span class="line">nmap &lt;leader&gt;rr &lt;action&gt;(Rerun)</span><br><span class="line">&quot;重新运行最近一次运行的测试（Unit Tests）(Ctrl + Shift + F10)</span><br><span class="line">let g:WhichKeyDesc_RunOrRe_ReRunTests = &quot;&lt;leader&gt;rt 重新运行Test&quot;</span><br><span class="line">nmap &lt;leader&gt;rt &lt;action&gt;(RerunTests)</span><br><span class="line">&quot;在代码中快速更改一个标识符的名称，并自动处理所有相关的引用(Shift + F6)</span><br><span class="line">let g:WhichKeyDesc_RunOrRe_Rename = &quot;&lt;leader&gt;rn 重构&quot;</span><br><span class="line">map &lt;leader&gt;rn &lt;action&gt;(RenameElement)</span><br><span class="line">&quot;运行</span><br><span class="line">let g:WhichKeyDesc_RunOrRe_Run = &quot;&lt;leader&gt;ru 运行&quot;</span><br><span class="line">map &lt;leader&gt;ru &lt;action&gt;(Run)</span><br><span class="line"></span><br><span class="line">&quot;========== s ==========</span><br><span class="line">let g:WhichKeyDesc_Show = &quot;&lt;leader&gt;s 显示&amp;停止&quot;</span><br><span class="line"></span><br><span class="line">&quot;显示当前打开文件的文件结构弹出窗口，其中包含文件中的类、方法、字段等结构(Alt + 7)</span><br><span class="line">let g:WhichKeyDesc_Show_FileStructure = &quot;&lt;leader&gt;ss 显示文件结构&quot;</span><br><span class="line">nmap &lt;leader&gt;ss &lt;action&gt;(FileStructurePopup)</span><br><span class="line">&quot;显示书签（Bookmarks）工具窗口，其中包含当前文件中设置的书签列表(Ctrl + F11)</span><br><span class="line">let g:WhichKeyDesc_Show_Bookmarks = &quot;&lt;leader&gt;sb 显示书签工具窗口&quot;</span><br><span class="line">nmap &lt;leader&gt;sb &lt;action&gt;(ShowBookmarks)</span><br><span class="line">&quot;用于显示方法或函数的参数信息(Ctrl + p)</span><br><span class="line">let g:WhichKeyDesc_Show_ParameterInfo = &quot;&lt;leader&gt;sp 显示方法或函数的参数信息&quot;</span><br><span class="line">nmap &lt;leader&gt;sp &lt;action&gt;(ParameterInfo)</span><br><span class="line">&quot;Stop</span><br><span class="line">let g:WhichKeyDesc_Show_Stop = &quot;&lt;leader&gt;st 停止运行&quot;</span><br><span class="line">nmap &lt;leader&gt;st &lt;action&gt;(Stop)</span><br><span class="line"></span><br><span class="line">&quot;========= t ==========</span><br><span class="line">&quot;翻译</span><br><span class="line">let g:WhichKeyDesc_Translate = &quot;&lt;leader&gt;t 翻译&quot;</span><br><span class="line">nmap &lt;leader&gt;t &lt;action&gt;($EditorTranslateAction)</span><br><span class="line">vmap &lt;leader&gt;t &lt;action&gt;($EditorTranslateAction)</span><br><span class="line"></span><br><span class="line">&quot;========== w ==========</span><br><span class="line">let g:WhichKeyDesc_Windows = &quot;&lt;leader&gt;w 窗口&quot;</span><br><span class="line">let g:WhichKeyDesc_Windows_Hide = &quot;&lt;leader&gt;ww 关闭提示窗口-&gt;a&quot;</span><br><span class="line">let g:WhichKeyDesc_Windows_Move = &quot;&lt;leader&gt;wm 移动窗口&quot;</span><br><span class="line"></span><br><span class="line">&quot;向右拆分标签页</span><br><span class="line">let g:WhichKeyDesc_Windows_Move_MoveTabRight = &quot;&lt;leader&gt;wml 向右拆分标签页&quot;</span><br><span class="line">nmap &lt;leader&gt;wml &lt;action&gt;(MoveTabRight)</span><br><span class="line">&quot;向下拆分标签页</span><br><span class="line">let g:WhichKeyDesc_Windows_Move_MoveTabDown = &quot;&lt;leader&gt;wmd 向下拆分标签页&quot;</span><br><span class="line">nmap &lt;leader&gt;wmd &lt;action&gt;(MoveTabDown)</span><br><span class="line">&quot;在另一边打开（前提是有另一边的分割窗口）</span><br><span class="line">let g:WhichKeyDesc_Windows_Move_MoveEditorToOppositeTabGroup = &quot;&lt;leader&gt;wmo 在另一边打开&quot;</span><br><span class="line">nmap &lt;leader&gt;wmo &lt;action&gt;(MoveEditorToOppositeTabGroup)</span><br><span class="line">&quot;向右复制标签页</span><br><span class="line">let g:WhichKeyDesc_Windows_Move_SplitVertically = &quot;&lt;leader&gt;wmc 向右复制标签页&quot;</span><br><span class="line">nmap &lt;leader&gt;wmc &lt;action&gt;(SplitVertically)</span><br><span class="line"></span><br><span class="line">&quot;取消所有分割窗口</span><br><span class="line">let g:WhichKeyDesc_Windows_UnsplitAll = &quot;&lt;leader&gt;wa 取消所有分割窗口&quot;</span><br><span class="line">nmap &lt;leader&gt;wa &lt;action&gt;(UnsplitAll)</span><br><span class="line">&quot;关闭当前窗口或分割窗格</span><br><span class="line">let g:WhichKeyDesc_Windows_closeActiveWindow = &quot;&lt;leader&gt;wc 关闭当前分割窗口&quot;</span><br><span class="line">nmap &lt;leader&gt;wc &lt;c-w&gt;c</span><br><span class="line">&quot;取消拆分当前分割窗口</span><br><span class="line">let g:WhichKeyDesc_Windows_Unsplit = &quot;&lt;leader&gt;wu 取消拆分当前分割窗口&quot;</span><br><span class="line">nmap &lt;leader&gt;wu &lt;action&gt;(Unsplit)</span><br><span class="line"></span><br><span class="line">&quot;关闭提示窗口</span><br><span class="line">let g:WhichKeyDesc_Windows_Hide_HideActiveWindow = &quot;&lt;leader&gt;wwa 关闭提示窗口&quot;</span><br><span class="line">nmap &lt;leader&gt;wwa &lt;action&gt;(HideActiveWindow)</span><br><span class="line"></span><br><span class="line">&quot;========== y ==========</span><br><span class="line">&quot;普通模式下将 &quot;+ (复制到剪切板）简化为 &lt;leader&gt;y</span><br><span class="line">let g:WhichKeyDesc_CopyClipboard = &quot;&lt;leader&gt;y 复制到剪切板&quot;</span><br><span class="line">vmap &lt;leader&gt;y &quot;+y</span><br><span class="line">&quot;可视模式下将 &quot;+ (复制到剪切板）简化为 &lt;leader&gt;y</span><br><span class="line">let g:WhichKeyDesc_CopyClipboard= &quot;&lt;leader&gt;y 复制到剪切板&quot;</span><br><span class="line">nmap &lt;leader&gt;y &quot;+yy</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&quot;========== z ==========</span><br><span class="line">let g:WhichKeyDesc_Zip = &quot;&lt;leader&gt;z 折叠&quot;</span><br><span class="line"></span><br><span class="line">&quot;展开所有代码折叠区域(Ctrl + Shift + 加号键)</span><br><span class="line">let g:WhichKeyDesc_Zip_unZipAll = &quot;&lt;leader&gt;zo 展开所有折叠&quot;</span><br><span class="line">nmap &lt;leader&gt;zo &lt;action&gt;(ExpandAllRegions)</span><br><span class="line">&quot;折叠所有代码折叠区域(Ctrl + Shift + 减号键)</span><br><span class="line">let g:WhichKeyDesc_Zip_ZipAll = &quot;&lt;leader&gt;zc 折叠所有代码&quot;</span><br><span class="line">nmap &lt;leader&gt;zc &lt;action&gt;(CollapseAllRegions)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot; 🌸🌸🌸 NERDTree 🌸🌸🌸</span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot;&lt;C-w-w&gt;：在多个打开的编辑器窗口之间切换</span><br><span class="line">&quot;在目录中，按下 go 打开文件并保持光标在目录</span><br><span class="line">&quot;在目录中，按下 gi 以上下并排窗口形式打开文件(并关闭目录)</span><br><span class="line">&quot;在目录树中，使用空格预览文件</span><br><span class="line">&quot;光标在目录时，按Esc回到编辑器</span><br><span class="line">&quot;编辑器和目录间切换存在许多功能类似的快捷键，相似但不完全相同</span><br><span class="line">&quot;仅 打开/关闭 目录推荐使用&lt;leader&gt;wo 其次 Alt + 1</span><br><span class="line"></span><br><span class="line">&quot;按下 &lt;leader&gt;nn 将使焦点转移到 NERDTree 窗口</span><br><span class="line">nnoremap &lt;leader&gt;nn :NERDTreeFocus&lt;CR&gt;</span><br><span class="line">let g:WhichKeyDesc_NERDTreeOrNo_NERDTreeFocus = &quot;&lt;leader&gt;nn 转移到目录树&quot;</span><br><span class="line"></span><br><span class="line">&quot;按下 &lt;C-n&gt; 将打开 NERDTree 文件资源管理器(==&lt;leader&gt;nn)</span><br><span class="line">nnoremap &lt;C-n&gt; :NERDTree&lt;CR&gt;</span><br><span class="line"></span><br><span class="line">&quot;按下 &lt;C-t&gt; 将切换 NERDTree 文件资源管理器的显示状态，即打开或关闭 NERDTree(不建议)</span><br><span class="line">nnoremap &lt;C-t&gt; :NERDTreeToggle&lt;CR&gt;</span><br><span class="line"></span><br><span class="line">&quot;按下 &lt;C-f&gt; 将在 NERDTree 文件资源管理器中定位当前编辑文件所在的节点，并使其可见(&lt;leader&gt;fl)</span><br><span class="line">nnoremap &lt;C-f&gt; :NERDTreeFind&lt;CR&gt;</span><br><span class="line"></span><br><span class="line">&quot; ================================================================================================</span><br><span class="line">&quot; 🌸🌸🌸 Easymotion 🌸🌸🌸</span><br><span class="line">&quot; ================================================================================================</span><br><span class="line"></span><br><span class="line">&quot; let g:WhichKeyDesc_easymotionkey = &quot;&lt;leader&gt;&lt;leader&gt; 快速跳转插件&quot;</span><br><span class="line"></span><br><span class="line">&quot;普通模式输入s后输入要跳转到单词首字母(或多输入几个字母)</span><br><span class="line">nmap s &lt;Plug&gt;(easymotion-bd-n)</span><br><span class="line">let g:WhichKeyDesc_easymotion = &quot;s 快速跳转&quot;</span><br></pre></td></tr></table></figure>
+</details>
+
+
+<h2 id="3-参考"><a href="#3-参考" class="headerlink" title="3.参考"></a>3.参考</h2><p>Google</p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/free-use-of-ssl-certificates/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="Update time"></i>
+              2024-07-13 16:14:00
+            </span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="Categories"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/jetbrains/" title="jetbrains">
+                        <b>#</b> jetbrains
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags mr-10" title="Tags"></i>
+                    
+                    <span class="span--tag mr-8">
+                      <a href="/tags/jetbrains/" title="jetbrains">
+                        #jetbrains
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BDideavim%E6%8F%92%E4%BB%B6"><span class="toc-text">1.下载ideavim插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%9F%A5%E7%9C%8Bidea%E8%87%AA%E5%B8%A6action"><span class="toc-text">2.查看idea自带action</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%8F%82%E8%80%83"><span class="toc-text">3.参考</span></a></li></ol>
+      
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+  </div>
+
+
+        
+<div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          
+              <a title="github" target="_blank" rel="noopener" href="https://github.com/s1xu">
+                <i class="iconfont icon-github"></i>
+              </a>
+              
+        </li>
+        
+        <li>
+          
+              <a title="rss" href="/feed.xml">
+                <i class="iconfont icon-rss"></i>
+              </a>
+              
+        </li>
+        
+    </ul>
+  </div>
+  
+    
+    <div class="footer-more">
+      
+        Copyright © 2024 s1xu
+        
+    </div>
+  
+  
+    <div class="footer-views">
+      
+      
+          本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        
+      
+      
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="Search...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        inputArea.focus()
+        getSearchFile()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+        
+      </div>
+    </div>
+  
+  
+<script src="/js/shares.js"></script>
+
+
+
+      </div>
+    </div>
+  
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,d=o();function o(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=o());for(var e,i=0;i<d.length;i++)0<=(e=(e=d[i]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,a,n,o=d[i];e=function(){d=d.filter(function(t){return o!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(o)},(t=o).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,n=t.getAttribute("data-original"),a.onload=function(){t.src=n,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=n},t.src!==n&&(a.src=n)))}()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)}(this);</script></body>
+</html>

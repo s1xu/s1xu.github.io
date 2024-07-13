@@ -3,61 +3,132 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>{{ config.title }}</title>
-    <link>{{ url }}</link>
-    {% if icon %}
+    <title>s1xu - 折腾记录</title>
+    <link>http://blog.s1xu.com/</link>
+    
     <image>
-      <url>{{ icon }}</url>
-      <title>{{ config.title }}</title>
-      <link>{{ url }}</link>
+      <url>http://blog.s1xu.com/icon.png</url>
+      <title>s1xu - 折腾记录</title>
+      <link>http://blog.s1xu.com/</link>
     </image>
-    {% endif %}
-    <atom:link href="{{ feed_url | uriencode }}" rel="self" type="application/rss+xml"/>
-    {% if config.feed.hub %}<atom:link href="{{ config.feed.hub | uriencode }}" rel="hub"/>{% endif %}
-    <description>{{ config.description }}</description>
-    <pubDate>{% if posts.first().updated %}{{ posts.first().updated.toDate().toUTCString() }}{% else %}{{ posts.first().date.toDate().toUTCString() }}{% endif %}</pubDate>
+    
+    <atom:link href="http://blog.s1xu.com/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>s1xu - 折腾记录</description>
+    <pubDate>Sat, 13 Jul 2024 08:14:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    {% for post in posts.toArray() %}
+    
     <item>
-      <title>{{ post.title }}</title>
-      <link>{{ post.permalink | uriencode }}</link>
-      <guid>{{ post.permalink | uriencode }}</guid>
-      <pubDate>{{ post.date.toDate().toUTCString() }}</pubDate>
-      {% if post.description %}
-      <description>{{ post.description }}</description>
-      {% elif post.intro %}
-      <description>{{ post.intro }}</description>
-      {% elif post.excerpt %}
-      <description>{{ post.excerpt }}</description>
-      {% elif post.content %}
-        {% set short_content = post.content.substring(0, config.feed.content_limit) %}
-        {% if config.feed.content_limit_delim %}
-          {% set delim_pos = short_content.lastIndexOf(config.feed.content_limit_delim) %}
-          {% if delim_pos > -1 %}
-      <description>{{ short_content.substring(0, delim_pos) }}</description>
-          {% else %}
-      <description>{{ short_content }}</description>
-          {% endif %}
-        {% else %}
-      <description>{{ short_content }}</description>
-        {% endif %}
-      {% endif %}
-      {% if post.image %}
-      <enclosure url="{{ url + post.image | uriencode }}" type="image"/>
-      {% endif %}
-      {% if config.feed.content and post.content %}
-      <content:encoded><![CDATA[{{ post.content | noControlChars | safe }}]]></content:encoded>
-      {% endif %}
-      {% for category in post.categories.toArray() %}
-      <category domain="{{ url + category.path | uriencode }}">{{ category.name }}</category>
-      {% endfor %}
-      {% for tag in post.tags.toArray() %}
-      <category domain="{{ url + tag.path | uriencode }}">{{ tag.name }}</category>
-      {% endfor %}
-      {% if post.comments %}
-      <comments>{{ post.permalink | uriencode }}#disqus_thread</comments>
-      {% endif %}
+      <title>记录ideavim设置</title>
+      <link>http://blog.s1xu.com/ideavim-settings/</link>
+      <guid>http://blog.s1xu.com/ideavim-settings/</guid>
+      <pubDate>Sat, 13 Jul 2024 07:31:22 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;因为习惯了vim操作，chrome中使用&lt;code&gt;Vimium&lt;/code&gt;，所以寻思在常用的编辑器中也使用vim操作，所以有了如下记录：&lt;/p&gt;
+&lt;h2 id=&quot;1-下载ideavim插件&quot;&gt;&lt;a href=&quot;#1-下载ideavim插件&quot; class=&quot;headerlink&quot; title=&quot;1.下载ideavim插件&quot;&gt;&lt;/a&gt;1.下载ideavim插件&lt;/h2&gt;&lt;h2 id=&quot;2-查看idea自带action&quot;&gt;&lt;a href=&quot;#2-查看idea自带action&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.s1xu.com/categories/jetbrains/">jetbrains</category>
+      
+      
+      <category domain="http://blog.s1xu.com/tags/jetbrains/">jetbrains</category>
+      
+      
+      <comments>http://blog.s1xu.com/ideavim-settings/#disqus_thread</comments>
+      
     </item>
-    {% endfor %}
+    
+    <item>
+      <title>免费使用ssl证书</title>
+      <link>http://blog.s1xu.com/free-use-of-ssl-certificates/</link>
+      <guid>http://blog.s1xu.com/free-use-of-ssl-certificates/</guid>
+      <pubDate>Tue, 25 Jun 2024 14:05:36 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;  &lt;a href=&quot;https://letsencrypt.org/&quot;&gt;Let’s Encrypt&lt;/a&gt; 是一个于2015年推出的数字证书认证机构，将通过旨在消除当前手动创建和安装证书的复杂过程的自动化流程，为安全网站提供免费的SSL&amp;#x2F;TLS证书。这是由&lt;a href=&quot;https://letsencrypt.org/isrg/&quot;&gt;互联网安全研究小组&lt;/a&gt;（ISRG – Internet Security Research Group，一个公益组织）提供的服务。主要赞助商包括&lt;a href=&quot;https://www.eff.org/&quot;&gt;电子前哨基金会&lt;/a&gt;，&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.s1xu.com/categories/Linux/">Linux</category>
+      
+      
+      <category domain="http://blog.s1xu.com/tags/Linux/">Linux</category>
+      
+      
+      <comments>http://blog.s1xu.com/free-use-of-ssl-certificates/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[macOS]记录我的mac设置</title>
+      <link>http://blog.s1xu.com/record-mac-settings/</link>
+      <guid>http://blog.s1xu.com/record-mac-settings/</guid>
+      <pubDate>Mon, 24 Jun 2024 16:56:34 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;1-调整启动台图标数量&quot;&gt;&lt;a href=&quot;#1-调整启动台图标数量&quot; class=&quot;headerlink&quot; title=&quot;1. 调整启动台图标数量&quot;&gt;&lt;/a&gt;1. 调整启动台图标数量&lt;/h2&gt;&lt;p&gt;Mac的Launchpad启动台下会存放应用程序的图标。但在默认设置下，这些应用的图标很大，而且也比较占用屏幕空间。&lt;br&gt;想找一个程序最简单的当然是聚焦和Alfred，不过偶尔看着启动台很乱也很难受。&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.s1xu.com/categories/macOS/">macOS</category>
+      
+      
+      <category domain="http://blog.s1xu.com/tags/macOS/">macOS</category>
+      
+      
+      <comments>http://blog.s1xu.com/record-mac-settings/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[macOS]设置菜单栏间距</title>
+      <link>http://blog.s1xu.com/sets-menu-bar-spacing/</link>
+      <guid>http://blog.s1xu.com/sets-menu-bar-spacing/</guid>
+      <pubDate>Sat, 22 Jun 2024 17:48:50 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;为什么会想要手动修改&quot;&gt;&lt;a href=&quot;#为什么会想要手动修改&quot; class=&quot;headerlink&quot; title=&quot;为什么会想要手动修改&quot;&gt;&lt;/a&gt;为什么会想要手动修改&lt;/h2&gt;&lt;p&gt;在MacBook 14及以后的版本中，屏幕中央新增了一个刘海设计，同时右侧状态栏的间距相较之前有所增宽。这使得本已空间有限的菜单栏显得更加拥挤。&lt;/p&gt;
+&lt;p&gt;尝试过&lt;code&gt;Barbee&lt;/code&gt;  &lt;code&gt;Bartender&lt;/code&gt;等一些菜单栏工具，相对来说Bartender功能更加丰富，&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.s1xu.com/categories/macOS/">macOS</category>
+      
+      
+      <category domain="http://blog.s1xu.com/tags/macOS/">macOS</category>
+      
+      
+      <comments>http://blog.s1xu.com/sets-menu-bar-spacing/#disqus_thread</comments>
+      
+    </item>
+    
   </channel>
 </rss>
