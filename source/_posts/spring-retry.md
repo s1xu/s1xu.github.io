@@ -286,4 +286,4 @@ public class RemoteService {
 
 ## 3. 参考
 
-1. [springdoc](https://springdoc.cn/spring-retry-guide/#google_vignette)
+1. [springdoc](https://springdoc.cn/spring-retry-guide/#google_vignette) 

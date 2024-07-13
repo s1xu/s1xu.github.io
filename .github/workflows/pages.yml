@@ -28,8 +28,14 @@ jobs:
         run: npm install
       - name: List source files
         run: ls -R source/_posts
+      - name: Display Hexo config
+        run: cat _config.yml
       - name: Build
         run: npm run build
+      - name: List generated files
+        run: ls -R public
+      - name: Display generated HTML for spring-retry
+        run: cat public/spring-retry/index.html || echo "File not found"
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
