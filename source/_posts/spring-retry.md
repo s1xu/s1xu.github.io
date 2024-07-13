@@ -9,10 +9,6 @@ tags: Java
 
 
 
-![](https://images.888166.xyz/2024076b3e16d8387a359f23284165beb1702e.png)
-
-
-
 ## 1. 依赖
 > 添加spring-retry以及AOP依赖
 > [sprint-retry mvn center](https://mvnrepository.com/artifact/org.springframework.retry/spring-retry)
@@ -90,15 +86,6 @@ public class MyService {
 }
 ```
 
-> Before Retry [open]
-> Performing network call...
-> Retry error [onError]: Network call failed
-> Performing network call...
-> Retry error [onError]: Network call failed
-> Performing network call...
-> Retry error [onError]: Network call failed
-> After Retry [close]
-
 #### 附
 
 1. execute方法
@@ -130,18 +117,18 @@ public interface RetryCallback<T> {
    
        @Override
        public <T, E extends Throwable> boolean open(RetryContext context, RetryCallback<T, E> callback) {
-           System.out.println("Before Retry [open]");
+           System.out.println("Before Retry");
            return true;
        }
    
        @Override
        public <T, E extends Throwable> void close(RetryContext context, RetryCallback<T, E> callback, Throwable throwable) {
-           System.out.println("After Retry [close]");
+           System.out.println("After Retry");
        }
    
        @Override
        public <T, E extends Throwable> void onError(RetryContext context, RetryCallback<T, E> callback, Throwable throwable) {
-           System.out.println("Retry error [onError]: " + throwable.getMessage());
+           System.out.println("Retry error: " + throwable.getMessage());
        }
    }
    ```
@@ -282,8 +269,9 @@ public class RemoteService {
    >
    > 这种类型的重试特别适用于那些需要连续状态或上下文来完成的操作，比如处理一系列需要连续的步骤的在线交易。在这些情况下，简单地重新开始可能会导致问题，如重复操作或数据不一致。
 
-
+#### spring retry 流程
+![flow](spring-retry/image.png)
 
 ## 3. 参考
 
-1. [springdoc](https://springdoc.cn/spring-retry-guide/#google_vignette) 
+1. [springdoc](https://springdoc.cn/spring-retry-guide/#google_vignette)
