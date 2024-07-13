@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>s1xu - 折腾记录</title>
+  <icon>http://blog.s1xu.com/icon.png</icon>
+  <subtitle>s1xu - 折腾记录</subtitle>
+  <link href="http://blog.s1xu.com/atom.xml" rel="self"/>
+  
+  <link href="http://blog.s1xu.com/"/>
+  <updated>2024-07-13T08:14:00.136Z</updated>
+  <id>http://blog.s1xu.com/</id>
+  
+  <author>
+    <name>s1xu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录ideavim设置</title>
+    <link href="http://blog.s1xu.com/ideavim-settings.html"/>
+    <id>http://blog.s1xu.com/ideavim-settings.html</id>
+    <published>2024-07-13T07:31:22.000Z</published>
+    <updated>2024-07-13T08:14:00.136Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;因为习惯了vim操作，chrome中使用&lt;code&gt;Vimium&lt;/code&gt;，所以寻思在常用的编辑器中也使用vim操作，所以有了如下记录：&lt;/p&gt;
+&lt;h2 id=&quot;1-下载ideavim插件&quot;&gt;&lt;a href=&quot;#1-下载ideavim插件&quot; class=&quot;headerlink&quot; title=&quot;1.下载ideavim插件&quot;&gt;&lt;/a&gt;1.下载ideavim插件&lt;/h2&gt;&lt;h2 id=&quot;2-查看idea自带action&quot;&gt;&lt;a href=&quot;#2-查看idea自带action&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="jetbrains" scheme="http://blog.s1xu.com/categories/jetbrains/"/>
+    
+    
+    <category term="jetbrains" scheme="http://blog.s1xu.com/tags/jetbrains/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>免费使用ssl证书</title>
+    <link href="http://blog.s1xu.com/free-use-of-ssl-certificates.html"/>
+    <id>http://blog.s1xu.com/free-use-of-ssl-certificates.html</id>
+    <published>2024-06-25T14:05:36.000Z</published>
+    <updated>2024-06-25T15:39:25.975Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;  &lt;a href=&quot;https://letsencrypt.org/&quot;&gt;Let’s Encrypt&lt;/a&gt; 是一个于2015年推出的数字证书认证机构，将通过旨在消除当前手动创建和安装证书的复杂过程的自动化流程，为安全网站提供免费的SSL&amp;#x2F;TLS证书。这是由&lt;a href=&quot;https://letsencrypt.org/isrg/&quot;&gt;互联网安全研究小组&lt;/a&gt;（ISRG – Internet Security Research Group，一个公益组织）提供的服务。主要赞助商包括&lt;a href=&quot;https://www.eff.org/&quot;&gt;电子前哨基金会&lt;/a&gt;，&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="http://blog.s1xu.com/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="http://blog.s1xu.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[macOS]记录我的mac设置</title>
+    <link href="http://blog.s1xu.com/record-mac-settings.html"/>
+    <id>http://blog.s1xu.com/record-mac-settings.html</id>
+    <published>2024-06-24T16:56:34.000Z</published>
+    <updated>2024-06-25T14:13:12.767Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-调整启动台图标数量&quot;&gt;&lt;a href=&quot;#1-调整启动台图标数量&quot; class=&quot;headerlink&quot; title=&quot;1. 调整启动台图标数量&quot;&gt;&lt;/a&gt;1. 调整启动台图标数量&lt;/h2&gt;&lt;p&gt;Mac的Launchpad启动台下会存放应用程序的图标。但在默认设置下，这些应用的图标很大，而且也比较占用屏幕空间。&lt;br&gt;想找一个程序最简单的当然是聚焦和Alfred，不过偶尔看着启动台很乱也很难受。&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="macOS" scheme="http://blog.s1xu.com/categories/macOS/"/>
+    
+    
+    <category term="macOS" scheme="http://blog.s1xu.com/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[macOS]设置菜单栏间距</title>
+    <link href="http://blog.s1xu.com/sets-menu-bar-spacing.html"/>
+    <id>http://blog.s1xu.com/sets-menu-bar-spacing.html</id>
+    <published>2024-06-22T17:48:50.000Z</published>
+    <updated>2024-06-24T16:55:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;为什么会想要手动修改&quot;&gt;&lt;a href=&quot;#为什么会想要手动修改&quot; class=&quot;headerlink&quot; title=&quot;为什么会想要手动修改&quot;&gt;&lt;/a&gt;为什么会想要手动修改&lt;/h2&gt;&lt;p&gt;在MacBook 14及以后的版本中，屏幕中央新增了一个刘海设计，同时右侧状态栏的间距相较之前有所增宽。这使得本已空间有限的菜单栏显得更加拥挤。&lt;/p&gt;
+&lt;p&gt;尝试过&lt;code&gt;Barbee&lt;/code&gt;  &lt;code&gt;Bartender&lt;/code&gt;等一些菜单栏工具，相对来说Bartender功能更加丰富，&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="macOS" scheme="http://blog.s1xu.com/categories/macOS/"/>
+    
+    
+    <category term="macOS" scheme="http://blog.s1xu.com/tags/macOS/"/>
+    
+  </entry>
+  
+</feed>
