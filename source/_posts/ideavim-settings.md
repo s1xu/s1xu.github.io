@@ -28,7 +28,31 @@ tags: jetbrains
       " bookmark 切换书签
       nmap ma <action>(ToggleBookmark)
       nmap rma <action>(EditBookmark)
-      ```
+     ```
+## 3.目录使用hjkl展开关闭
+``` 
+" 设置目录树快捷键映射
+set NERDTree
+let g:NERDTreeMapActivateNode = 'l'
+let g:NERDTreeMapCloseDir = 'h'
+```
+
+## 4.自动切换输入法
+vim 在退出`insert`模式自动后切换为原来的输入法
+[依赖`IdeaVimExtension`插件](https://github.com/hadix-lin/ideavim_extension)
+```
+let context_aware=1
+set keep-english-in-normal-and-restore-in-insert
+```
+设置后重启生效
+>:set keep-english-in-normal 开启输入法自动切换功能
+>:set keep-english-in-normal-and-restore-in-insert 回到insert模式时恢复输入法
+>:set nokeep-english-in-normal-and-restore-in-insert 保留输入法自动切换功能，但是回到insert模式不恢复输入法
+>:set nokeep-english-in-normal 关闭输入法自动切换功能
+>
+> context_aware=1 回到insert模式的时候，如果光标两侧都是非ASCII字符才会恢复输入法，这是1.6.5的默认设置。
+> context_aware=0 回到insert模式就恢复输入法
+
 
 <br>
 <br>
@@ -73,8 +97,8 @@ set hlsearch
 "--set number relativenumber
 
 "--设置返回normal模式时回到英文输入法
-"let context_aware=1
-"set keep-english-in-normal-and-restore-in-insert
+let context_aware=1
+set keep-english-in-normal-and-restore-in-insert
 
 " 设置目录树快捷键映射
 set NERDTree
@@ -553,6 +577,6 @@ let g:WhichKeyDesc_easymotion = "s 快速跳转"
 </details>
 
 
-## 3.参考
+## 5.参考
 
 Google
