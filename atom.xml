@@ -6,7 +6,7 @@
   <link href="https://blog.s1xu.com/atom.xml" rel="self"/>
   
   <link href="https://blog.s1xu.com/"/>
-  <updated>2024-07-13T08:14:00.136Z</updated>
+  <updated>2025-02-16T15:08:26.551Z</updated>
   <id>https://blog.s1xu.com/</id>
   
   <author>
@@ -17,11 +17,63 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>BarTuner - 专注调节Mac菜单栏间距的App</title>
+    <link href="https://blog.s1xu.com/bar-tuner/"/>
+    <id>https://blog.s1xu.com/bar-tuner/</id>
+    <published>2025-02-16T14:49:41.000Z</published>
+    <updated>2025-02-16T15:08:26.551Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;为什么要做这个工具？&quot;&gt;&lt;a href=&quot;#为什么要做这个工具？&quot; class=&quot;headerlink&quot; title=&quot;为什么要做这个工具？&quot;&gt;&lt;/a&gt;为什么要做这个工具？&lt;/h1&gt;&lt;p&gt;作为一名 MacBook 用户，相信很多人和我一样被刘海屏带来的一个小问题所困扰：右上角菜单栏的图标间距明显变宽了，看起来不够紧凑。这个细节虽小，却总让我觉得有些不够完美。&lt;/p&gt;
+&lt;p&gt;见：&lt;a href=&quot;https://blog.s1xu.com/sets-menu-bar-spacing/&quot;&gt;[macOS]设置菜单栏间距&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;BarTuner-诞生记&quot;&gt;&lt;a href=&quot;#BarTuner-诞生记&quot; class=&quot;headerlink&quot; title=&quot;BarTuner</summary>
+        
+      
+    
+    
+    
+    
+    <category term="macOS" scheme="https://blog.s1xu.com/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅析springretry的使用</title>
+    <link href="https://blog.s1xu.com/spring-retry/"/>
+    <id>https://blog.s1xu.com/spring-retry/</id>
+    <published>2024-07-13T10:23:28.000Z</published>
+    <updated>2024-07-13T15:38:58.435Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近项目中使用到了spring retry用来调用三方接口中保证失败重试，增加系统健壮性，简单了解了一下使用。&lt;/p&gt;
+&lt;h2 id=&quot;1-依赖&quot;&gt;&lt;a href=&quot;#1-依赖&quot; class=&quot;headerlink&quot; title=&quot;1. 依赖&quot;&gt;&lt;/a&gt;1. 依赖&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;添加spring-retry以及AOP依赖&lt;br&gt;&lt;a href=&quot;https://mvnrepository.com/artifact/org.springframework.retry/spring-retry&quot;&gt;sprint-retry mvn center&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&quot;&gt;spring-aspects mvn</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://blog.s1xu.com/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://blog.s1xu.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>记录ideavim设置</title>
     <link href="https://blog.s1xu.com/ideavim-settings/"/>
     <id>https://blog.s1xu.com/ideavim-settings/</id>
     <published>2024-07-13T07:31:22.000Z</published>
-    <updated>2024-07-13T08:14:00.136Z</updated>
+    <updated>2024-07-16T13:12:52.267Z</updated>
     
     
       
