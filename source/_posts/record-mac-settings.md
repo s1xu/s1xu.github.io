@@ -1,6 +1,7 @@
 ---
 title: '[macOS]记录我的mac设置'
 date: 2024-06-25 00:56:34
+updated: 2024-06-25 00:56:34
 categories: macOS
 tags: macOS
 ---

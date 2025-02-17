@@ -1,6 +1,7 @@
 ---
 title: 记录ideavim设置
 date: 2024-07-13 15:31:22
+updated: 2024-07-13 15:31:22
 categories: jetbrains
 tags: jetbrains
 ---
