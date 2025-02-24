@@ -8,7 +8,7 @@ subtitle: 's1xu - 折腾记录'
 description: 's1xu - 折腾记录'
 keywords:
 author: s1xu
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -128,3 +128,8 @@ lazyload:
   onlypost: false # optional
   loadingImg: # optional eg ./images/loading.gif
   isSPA: false # optional
+sitemap:
+    path: sitemap.xml
+    tag: false
+    category: false
+
